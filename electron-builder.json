@@ -1,0 +1,46 @@
+{
+    "productName": "OpenSlides",
+    "asar": true,
+    "directories": {
+        "output": "./builds"
+    },
+    "files": [
+        "**/*",
+        "!**/*.ts",
+        "!**/*.json",
+        "!**.*.md",
+        "!*.sh",
+        "!*.code-workspace",
+        "!.dockerignore",
+        "!.prettierrc",
+        "!docker/",
+        "!node_modules/",
+        "!src/",
+        "!e2e/",
+        "!hooks/",
+        "!_config.yml",
+        "!karma.conf.js",
+        {
+            "from": "dist",
+            "to": "./dist",
+            "filter": ["**/*"]
+        }
+    ],
+    "win": {
+        "icon": "dist/assets/icons/icon-512x512.png",
+        "target": ["nsis", "portable"]
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+        "icon": "dist/assets/icons/icon-512x512.png",
+        "identity": null,
+        "target": "dmg"
+    },
+    "linux": {
+        "icon": "dist/assets/icons/icon-512x512.png",
+        "target": "AppImage"
+    }
+}

@@ -1,0 +1,19 @@
+<div class="openslides-banner color-os-main">
+    <img class="logo" src="assets/img/openslides-logo-dark.svg" />
+</div>
+
+<div class="content-wrapper">
+    <form [formGroup]="selectServerForm" (ngSubmit)="selectServer()">
+        <label>
+            OpenSlides URL
+            <br />
+            <div class="url-input-wrapper">
+                <span>{{ protocolString }}</span>
+                <input class="url-input" type="text" formControlName="serverUrl" />
+            </div>
+        </label>
+
+        <br />
+        <button class="connect-button color-os-main" type="submit">Connect</button>
+    </form>
+</div>

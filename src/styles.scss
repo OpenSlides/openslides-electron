@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    // mat grey 100
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-os-main {
+    // os blue 500
+    background: #317796;
+    color: white;
+}
+
+// fake mat input
+input {
+    border: 0;
+    font-size: larger;
+    border-bottom: 1px solid darkgray;
+    background: #f5f5f5;
+}
+
+// fake mat button
+button {
+    border: 0;
+    padding: 0.7em 1.5em;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
