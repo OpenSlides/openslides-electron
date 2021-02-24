@@ -1,0 +1,37 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+.openslides-banner {
+    display: flex;
+    height: 20vh;
+    min-height: 100px;
+
+    .logo {
+        margin: auto;
+        max-width: 400px;
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    margin: 5em auto;
+    text-align: center;
+
+    .url-input-wrapper {
+        margin: 1em;
+        span {
+            font-size: larger;
+            margin-top: 4px;
+            margin-right: 5px;
+        }
+        .url-input {
+            width: 20em;
+        }
+    }
+
+    .connect-button {
+        margin-top: 1em;
+    }
+}
