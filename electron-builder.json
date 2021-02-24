@@ -26,6 +26,12 @@
             "filter": ["**/*"]
         }
     ],
+    "publish": [
+        {
+            "provider": "github",
+            "releaseType": "prerelease"
+        }
+    ],
     "win": {
         "icon": "dist/assets/icons/icon-512x512.png",
         "target": ["nsis", "portable"]

@@ -28,6 +28,11 @@ To test OpenSlides using electron without creating a productive build:
 
 This will build the OpenSlides with debug information and mount the build into electron
 
+# Manually create executables
+
+This step is usually not necessary, since GitHub actions should create the executables automatically
+after a PR was merged. However, if you need to build OpenSlides-Electron yourself do the following:
+
 To create production ready electron packages, build the client in prod mode first.
 
     npm run build
