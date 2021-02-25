@@ -1,35 +1,22 @@
 {
-    "productName": "OpenSlides",
+    "productName": "OpenSlides Desktop App",
     "asar": true,
     "directories": {
         "output": "./builds"
     },
     "files": [
-        "**/*",
-        "!**/*.ts",
-        "!**/*.json",
-        "!**.*.md",
-        "!*.sh",
-        "!*.code-workspace",
-        "!.dockerignore",
-        "!.prettierrc",
-        "!docker/",
-        "!node_modules/",
-        "!src/",
-        "!e2e/",
-        "!hooks/",
-        "!_config.yml",
-        "!karma.conf.js",
-        {
-            "from": "dist",
-            "to": "./dist",
-            "filter": ["**/*"]
-        }
+        "dist",
+        "electron-main.js",
+        "!node_modules/@angular",
+        "!node_modules/@ngx-pwa",
+        "!node_modules/rxjs",
+        "!node_modules/tslib",
+        "!node_modules/zone.js"
     ],
     "publish": [
         {
             "provider": "github",
-            "releaseType": "prerelease"
+            "releaseType": "release"
         }
     ],
     "win": {

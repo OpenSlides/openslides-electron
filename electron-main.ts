@@ -1,6 +1,6 @@
-import { app, protocol, BrowserWindow, Menu, session, shell, screen, ipcMain, globalShortcut } from 'electron';
+import { app, protocol, BrowserWindow, Menu, session, shell, screen, globalShortcut } from 'electron';
 import { BrowserWindowConstructorOptions, MenuItemConstructorOptions } from 'electron/main';
-// import * as updater from 'electron-updater';
+import { autoUpdater } from 'electron-updater';
 import * as path from 'path';
 import * as url from 'url';
 
@@ -10,7 +10,6 @@ import * as url from 'url';
 const args = process.argv.slice(1);
 const debug = args.includes('--debug');
 const serve = args.includes('--serve');
-// const autoUpdater = updater.autoUpdater;
 
 let win: BrowserWindow;
 
@@ -139,7 +138,7 @@ try {
             callback({ path: path.normalize(`${__dirname}/dist/${url}`) });
         });
 
-        // autoUpdater.checkForUpdatesAndNotify();
+        autoUpdater.checkForUpdatesAndNotify();
 
         createWindow();
     });
