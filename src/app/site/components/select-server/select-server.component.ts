@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, AbstractControl, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, AbstractControl, Validators, FormBuilder } from '@angular/forms';
 import { AttachServerService, protocols } from 'src/app/services/attach-server.service';
 import { Router } from '@angular/router';
 
