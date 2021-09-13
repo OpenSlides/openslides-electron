@@ -6,11 +6,11 @@ import { Directive, Input, HostBinding } from '@angular/core';
  * not app-webview and not [webview].
  * This hooks to electrons webview selector
  */
-/* tslint:disable */
+/* eslint-disable */
 @Directive({
     selector: 'webview'
 })
-/* tslint:enable */
+/* eslint-enable */
 export class WebviewDirective {
     @HostBinding('attr.src')
     serverUrl = '';
