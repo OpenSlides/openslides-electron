@@ -21,7 +21,6 @@ export class AttachServerService {
     public constructor(private storage: StorageMap) {
         storage.get(LAST_SERVER_URL_STORE_KEY, { type: 'string' }).subscribe(lastUrl => {
             if (lastUrl) {
-                console.log('last url', lastUrl);
                 this.serverUrlSubject.next(lastUrl);
             }
         });

@@ -72,8 +72,8 @@ function createWindow(): void {
         height: size.height,
         webPreferences: {
             contextIsolation: false,
-            enableRemoteModule: true,
             webviewTag: true,
+            nativeWindowOpen: true,
             webSecurity: !debug,
             allowRunningInsecureContent: debug
         }
